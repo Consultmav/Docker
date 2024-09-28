@@ -1,0 +1,11 @@
+~$ docker run --name python_1 -d python > /dev/null
+~$ docker run --name python_2 -d python > /dev/null
+~$ docker run --name nginx -d nginx > /dev/null
+~$ 
+~$ docker stop $(docker ps -q) > /dev/null
+$ docker start python_1
+python_1
+~$ 
+Answers:
+Working containers - 0
+All containers - 3
